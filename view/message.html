@@ -1,0 +1,13 @@
+
+<div class="message">
+	<div class="author">автор сообщения <?php echo $this->author; ?></div>
+	<div class="date">дата создания <?php echo date('Y-m-d H:i:s', $this->tstamp); ?></div>
+	<div class="text"><?php echo $this->text; ?></div>
+	<div class="operations">
+		<a href="?show=messages&act=create&themeid=<?php echo $this->themeid; ?>&pid=<?php echo $this->id; ?>#form" title="Создать сообщение"><img src="/view/edit.gif" width="12" height="16" /></a>
+		<a href="?show=messages&act=delete&themeid=<?php echo $this->themeid; ?>&pid=<?php echo $this->id; ?>" onclick="if (!confirm('Вы действительно хотите удалить запись?')) return false; Backend.getScrollOffset();" title="Удалить сообщение"><img src="/view/delete.gif" width="12" height="16" /></a>
+	</div>
+	<?php if ( isset($this->submessage) ) : ?>
+	<div class="submessage"><?php echo $this->submessage; ?></div>
+	<?php endif; ?>
+</div>

@@ -1,0 +1,98 @@
+/*
+* {
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+}
+*/
+body {
+	background-color:#EEE;
+}
+
+#container {
+	width:980px;
+	margin:0 auto;
+}
+
+.shadow {
+	box-shadow: 0 0 5px black; /* Параметры тени */
+	box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Параметры тени */
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Для Firefox */
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Для Safari и Chrome */
+}
+
+#header {
+	width:980px;
+	margin: 0 auto;
+	background-color:#FFF;
+	text-align:center;
+}
+
+#content {
+	width:980px;
+	margin: 0 auto;
+	background-color:#FFF;
+}
+
+#footer {
+	width:980px;
+	margin: 0 auto;
+	background-color:#FFF;
+	padding-top: 15px;
+	padding-bottom:5px;
+	text-align:center;
+}
+
+.themes {
+	width:940px;
+	margin:0 auto;
+}
+
+.messages {
+	width:940px;
+	margin:0 auto;
+}
+
+.theme {
+	border-bottom:1px solid black;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	padding-bottom:5px;
+}
+
+.message {
+	border-bottom:1px solid black;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	padding-bottom:5px;
+}
+
+.subtheme {
+	padding-left:20px;
+	padding-right:5px;
+}
+
+.submessage {
+	padding-left:20px;
+	padding-right:5px;
+}
+
+.form {
+	width:400px;
+	margin: 0 auto;
+	border:1px solid black;
+	padding:5px;
+}
+
+.label {
+	font-size:26px;
+}
+
+.operations {
+	text-align:right;
+}

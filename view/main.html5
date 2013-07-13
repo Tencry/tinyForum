@@ -1,0 +1,16 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf-8">  
+  <title><?php echo $this->title; ?></title>  
+  <link rel="stylesheet" type="text/css" href="view/reset.css">
+  <link rel="stylesheet" type="text/css" href="view/main.css">
+</head>  
+<body>  
+<div id="container" class="shadow">
+	<header id="header"><span class="label">tinyForum</span></header>
+	<div id="content"><?php echo $this->content; ?></div>
+  <footer id="footer">tinyForum &copy; 2012 Arman Sarsenov</footer>
+</div>
+</body>  
+</html>  

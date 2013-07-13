@@ -1,0 +1,10 @@
+
+<div class="theme">
+	<div class="title"><?php echo $this->title; ?></div>
+	<div class="author">автор <?php echo $this->author; ?></div>
+	<div class="date">Создано <?php echo date('Y-m-d H:i:s', $this->tstamp); ?></div>
+	<div class="operations"><a href="?show=messages&themeid=<?php echo $this->id; ?>">Сообщения</a>&nbsp;<a href="?show=themes&act=create&pid=<?php echo $this->id; ?>#form">Создать подтему</a></div>
+	<?php if ( isset($this->subtheme) ) : ?>
+	<div class="subtheme"><?php echo $this->subtheme; ?></div>
+	<?php endif; ?>
+</div>

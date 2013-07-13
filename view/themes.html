@@ -1,0 +1,22 @@
+<div class="themes">
+	<div class="operations"><a href="?show=themes&act=create#form">Создать тему</a></div>
+	<?php if ($this->showForm) : ?>
+	<a name="form"></a>
+	<div class="form">
+		<form action="" method="post" >
+		<input type="hidden" name="FORM_SUBMIT" value="create_theme" /> 
+		<label for="title">Название темы:</label>
+		<input id="title" name="title" type="text" placeholder="Название темы" required />
+		<br />
+		<label for="author">Имя пользователя:</label>
+		<input id="author" name="author" type="text" placeholder="Имя автора" required />
+		<br />
+		<button type="submit"> Создать </button>&nbsp;&nbsp;<a href="?show=themes">Отмена</a>
+		</form>
+	</div>
+	<?php endif; ?>
+		
+	<?php echo $this->content; ?>
+	
+	<div class="operations"><a href="?show=themes&act=create#form">Создать тему</a></div>
+</div>

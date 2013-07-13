@@ -1,0 +1,27 @@
+<div class="messages">
+	<?php if ( isset($this->header) ) : ?>
+	<h1><?php echo $this->header; ?></h1>
+	<?php endif; ?>
+	
+	<div class="operations"><a href="?show=themes">Темы</a>&nbsp;&nbsp;&nbsp;<a href="?show=messages&themeid=<?php echo $this->themeid; ?>&act=create#form">Создать сообщение</a></div>
+	<?php if ($this->showForm) : ?>
+	<a name="form"></a>
+	<div class="form">
+		<form action="" method="post" >
+		<input type="hidden" name="FORM_SUBMIT" value="create_message" /> 
+		<label for="author">Имя пользователя:</label>
+		<input id="author" name="author" type="text" placeholder="Имя автора" required />
+		<br />
+		<!--<label for="title">Название темы:</label>
+		<input id="title" name="title" type="text" placeholder="Текст сообщения" required />-->
+		<textarea name="message" cols="38" rows="8"></textarea>
+		<br />
+		<button type="submit"> Создать </button>&nbsp;&nbsp;<a href="?show=messages&themeid=<?php echo $this->themeid; ?>">Отмена</a>
+		</form>
+	</div>
+	<?php endif; ?>
+	
+	<?php echo $this->content; ?>
+	
+	<div class="operations"><a href="?show=themes">Темы</a>&nbsp;&nbsp;&nbsp;<a href="?show=messages&themeid=<?php echo $this->themeid; ?>&act=create#form">Создать сообщение</a></div>
+</div>
